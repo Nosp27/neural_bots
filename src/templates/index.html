@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ person }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta property="og:image" content="{{ logo_path }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <style>
+        .message-box {
+            border: black 1px solid;
+            border-radius: 5px;
+            padding: 5px;
+            min-height: 32px;
+        }
+
+        .x_logo {
+            width: 100px;
+            height: auto;
+            margin: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>{{ person }}</h2>
+    <h3>{{ header }}</h3>
+    <img src="{{ logo_path }}" class="x_logo">
+    <div><p>model index: <span id="model_name">{{ model_name }}</span></p></div>
+    <div class="message-box" id="messages">
+
+    </div>
+    <form action="" onsubmit="return false;">
+        <div class="form-group" style="margin-top: 12px">
+            <label for="message">Сообщение писать сюда:</label>
+            <input class="form-control" id="message">
+            <button id="send" class="btn btn-primary" style="margin-top: 12px" onclick="onSend()">Send</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
