@@ -15,6 +15,10 @@ def models_init():
             'models/neural_liska/weights_lisa_63_iterations_lr0005_with_dr.h5',
             history_df='neural_sources/liska_lstm_in.txt',
         ),
+        'al': MessageBot(
+            'models/neural_aline/weights_aline_50_iterations_lr0005_with_dr.h5',
+            history_df='neural_sources/aline_lstm.txt',
+        ),
     }
 
     for model in models.values():

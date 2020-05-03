@@ -18,6 +18,7 @@ def create_app():
     app.add_url_rule('/neural_katie', 'neural_katie', neural_katie)
     app.add_url_rule('/neural_girl', 'neural_girl', neural_girl)
     app.add_url_rule('/neural_liska', 'neural_liska', neural_liska)
+    app.add_url_rule('/neural_aline', 'neural_aline', neural_aline)
 
     app.add_url_rule('/answer', 'answer', answer)
     app.add_url_rule('/script.js', 'script', script)
@@ -72,6 +73,19 @@ def neural_liska():
         person='Бот-Лиска',
         header=headers[random.randint(0, len(headers) - 1)],
         logo_path='logo/lisa_logo?disperse=%s' % time().hex(),
+        model_name='ls'
+    )
+
+
+def neural_aline():
+    headers = [
+        'без комментариев.'
+    ]
+    return render_template(
+        'index.html',
+        person='Бот-Алина',
+        header=headers[random.randint(0, len(headers) - 1)],
+        logo_path='logo/al_logo?disperse=%s' % time().hex(),
         model_name='ls'
     )
 
