@@ -86,7 +86,7 @@ def neural_aline():
         person='Бот-Алина',
         header=headers[random.randint(0, len(headers) - 1)],
         logo_path='logo/al_logo?disperse=%s' % time().hex(),
-        model_name='ls'
+        model_name='al'
     )
 
 
