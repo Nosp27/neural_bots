@@ -12,7 +12,7 @@ def models_init():
             history_df='~/neural_sources/kate_babe_lstm_in.txt',
         ),
         'ls': MessageBot(
-            'models/neural_liska/weights_lisa_63_iterations_lr0005_with_dr.h5',
+            'models/neural_liska/weights_lisa_50_iterations_lr0005_with_dr.h5',
             history_df='~/neural_sources/liska_lstm_in.txt',
         ),
     }
