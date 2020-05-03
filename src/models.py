@@ -5,19 +5,19 @@ def models_init():
     models = {
         'k': MessageBot(
             'models/k_model/model_weights.h5',
-            history_df='neural_sources/kate_lstm_in.txt',
+            history_df='~/neural_sources/kate_lstm_in.txt',
         ),
         'kb': MessageBot(
             'models/kb_model/kate_babe_model_30_RMSprop_full_history.h5',
-            history_df='neural_sources/kate_babe_lstm_in.txt',
+            history_df='~/neural_sources/kate_babe_lstm_in.txt',
         ),
         'ls': MessageBot(
-            'models/neural_liska/weights_lisa_63_iterations_lr0005_with_dr.h5',
-            history_df='neural_sources/liska_lstm_in.txt',
+            'models/neural_liska/weights_lisa_50_iterations_lr0005_with_dr.h5',
+            history_df='~/neural_sources/liska_lstm_in.txt',
         ),
         'al': MessageBot(
             'models/neural_aline/weights_aline_50_iterations_lr0005_with_dr.h5',
-            history_df='neural_sources/aline_lstm.txt',
+            history_df='~/neural_sources/aline_lstm.txt',
         ),
     }
 
