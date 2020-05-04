@@ -19,6 +19,7 @@ def create_app():
     app.add_url_rule('/neural_girl', 'neural_girl', neural_girl)
     app.add_url_rule('/neural_liska', 'neural_liska', neural_liska)
     app.add_url_rule('/neural_aline', 'neural_aline', neural_aline)
+    app.add_url_rule('/neural_goga', 'neural_goga', neural_goga)
 
     app.add_url_rule('/answer', 'answer', answer)
     app.add_url_rule('/script.js', 'script', script)
@@ -87,6 +88,23 @@ def neural_aline():
         header=headers[random.randint(0, len(headers) - 1)],
         logo_path='logo/al_logo?disperse=%s' % time().hex(),
         model_name='al'
+    )
+
+
+def neural_goga():
+    headers = [
+        'Этот вообще бешеный...',
+        'Так и не объяснил мне что с деньками',
+        'У него выходит какой то новый альбом, мож спросить?',
+        'Лежать плюс сосать, скайнэт )0)',
+        'Узнай, сколько чёрных в сорочанах'
+    ]
+    return render_template(
+        'index.html',
+        person='Бот Георгий Першин',
+        header=headers[random.randint(0, len(headers) - 1)],
+        logo_path='logo/go_logo?disperse=%s' % time().hex(),
+        model_name='go'
     )
 
 

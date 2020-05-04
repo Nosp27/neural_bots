@@ -19,6 +19,10 @@ def models_init():
             'models/neural_aline/weights_aline_50_iterations_lr0005_with_dr.h5',
             history_df='~/neural_sources/aline_lstm.txt',
         ),
+        'go': MessageBot(
+            'models/neural_goga/weights_goga_50_iterations_lr0005_with_dr.h5',
+            history_df='~/neural_sources/goga_lstm.txt',
+        ),
     }
 
     for model in models.values():
