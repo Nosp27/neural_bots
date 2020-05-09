@@ -34,17 +34,16 @@ def index():
 
 def neural_katie():
     headers = [
-        'Напиши сообщение',
-        'Проверим, исправно ли работает эта сучка?',
-        'Хмм... Что тут у нас? Напиши сообщение!',
-        'Не стесняйся, она нейронная',
+        'Мой прототип разочаровал моего создателя',
+        'Мой прототип наказан.',
+        'Я плохой и неблагодарный бот. Моё появление было ошибкой',
     ]
     return render_template(
-        'index.html',
+        'betrayer.html',
         person='Бот-Катя',
         header=headers[random.randint(0, len(headers) - 1)],
         logo_path='logo/k_logo',
-        model_name='k'
+        model_name='NO_MODEL_FOR_THIS_BITCH',
     )
 
 

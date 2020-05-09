@@ -21,7 +21,7 @@ async function onResponse(your_message, x) {
     const messagesHtml = document.getElementById('messages');
     messagesHtml.innerHTML = (
         messagesHtml.innerHTML +
-        `<p>${your_message}` +
-        `<p>- ${jsonResp['message']}</p>`
+        `<p class="well well-sm" style="margin: 12px">${your_message}` +
+        `<p class="well well-sm" style="margin: 12px">- ${jsonResp['message']}</p>`
     );
 }
